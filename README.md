@@ -28,9 +28,15 @@ Tras la configuración del entorno, si se desea realizar inferencia:
 python detect.py --weights modelo.pt --conf 0.25 --img-size 1280 --source inference/boya1.jpg
 ```
 
-Los resultados se encontrarán en runs/detect.
+Los resultados se encontrarán en runs/detect:
 
-Si lo que se busca es evaluar el modelo se recurrira:
+<div align="center">
+    <a href="./">
+        <img src="runs/detect//pexels-magi-dobreva-89810117-18852093.jpg" width="70%"/>
+    </a>
+</div>
+
+Si lo que se busca es evaluar el modelo se recurrirá a:
 
 ```sh
 python test.py --data data/data.yaml --img 1280 --batch 32 --conf 0.001 --iou 0.65 --device 0 --weights modelo.pt 
@@ -41,20 +47,10 @@ Para llevar a cabo un posible fine-tunning sobre nuestro modelo:
 ```sh
 python train_aux.py --workers 8 --device 0 --batch-size 16 --data data/data.yaml --img 1280 1280 --cfg cfg/training/yolov7-e6.yaml --weights modelo.py --hyp data/custom_hyp.yaml
 ```
-
-
-
-
-
-
-
-
-
-
-
  
+## Autor
 
-
+Pablo Guilló Jiménez - pablo.guillo101@alu.ulpgc.es
 
 [Python.com]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
 [Python-url]: https://www.python.org/
