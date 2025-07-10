@@ -47,6 +47,17 @@ Para llevar a cabo un posible fine-tunning sobre nuestro modelo:
 ```sh
 python train_aux.py --workers 8 --device 0 --batch-size 16 --data data/data.yaml --img 1280 1280 --cfg cfg/training/yolov7-e6.yaml --weights modelo.py --hyp data/custom_hyp.yaml
 ```
+
+## Despliegue
+
+Si se quiere desplegar con Docker, se puede emplear el dockerfile presente en este repositorio:
+
+```sh
+docker build -t buoynet .
+docker run -it buoynet
+```
+
+Para despues operarlo desde dentro.
  
 ## Autor
 
