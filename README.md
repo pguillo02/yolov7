@@ -12,6 +12,21 @@ Este proyecto ha sido principalmente desarrollado en python bajo el framework py
 
  [![Python][Python.com]][Python-url] [![Docker][Docker.com]][Docker-url] [![NumPy][NumPy.com]][NumPy-url]  [![OpenCV][OpenCV.com]][OpenCV-url] [![Pandas][Pandas.com]][Pandas-url] [![Jupyter Notebook][JupyterNotebook.com]][JupyterNotebook-url][![PyTorch][PyTorch.com]][PyTorch-url] [![scikit-learn][scikit-learn.com]][scikit-learn-url] [![TensorBoard][TensorBoard.com]][TensorBoard-url] [![IPython][IPython.com]][IPython-url] [![TorchVision][TorchVision.com]][TorchVision-url]
 
+## Análisis y Comparativa
+
+Nuestro modelo presenta resultados positivos en todos los contextos y distancias. Realizar inferencia sobre el arroja grandes resultados y sale vencedor en comparativas con otras arquitecturas típicas. 
+
+### Desempeño de arquitecturas de detección populares con BuoyCAT
+
+| Modelo     | Precisión (P) | Recall (R) | mAP@0.5 | mAP@0.5:0.95 |
+|------------|---------------|------------|---------|--------------|
+| **YOLOv7-e6**   | **0.841**     | **0.771**  | **0.796** | 0.411        |
+| YOLOv9-e   | 0.776         | 0.505      | 0.638   | 0.415        |
+| YOLOv10-l  | 0.767         | 0.571      | 0.689   | 0.423        |
+| YOLOv11-l  | 0.778         | 0.552      | 0.689   | **0.430**    |
+| RE-DETR-l | 0.691         | 0.520      | 0.597   | 0.358        |
+
+
 ## Configuración y uso
 
 Para poder realizar inferencia con nuestro modelo es importante llevar a cabo los siguientes pasos:
