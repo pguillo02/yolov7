@@ -1,8 +1,0 @@
-train: ./datasets/DETECCION_BOYAS_4.0/images/train # 118287 images
-val: ./datasets/DETECCION_BOYAS_4.0/images/val
-
-# number of classes
-nc: 2
-
-# class names
-names: [ 'Mooring Buoy', 'Oceanographic Buoy']
