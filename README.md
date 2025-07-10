@@ -12,10 +12,21 @@ Este proyecto ha sido principalmente desarrollado en python bajo el framework py
 
  [![Python][Python.com]][Python-url] [![Docker][Docker.com]][Docker-url] [![NumPy][NumPy.com]][NumPy-url]  [![OpenCV][OpenCV.com]][OpenCV-url] [![Pandas][Pandas.com]][Pandas-url] [![Jupyter Notebook][JupyterNotebook.com]][JupyterNotebook-url][![PyTorch][PyTorch.com]][PyTorch-url] [![scikit-learn][scikit-learn.com]][scikit-learn-url] [![TensorBoard][TensorBoard.com]][TensorBoard-url] [![IPython][IPython.com]][IPython-url] [![TorchVision][TorchVision.com]][TorchVision-url]
 
+## Configuración y uso
 
+Para poder realizar inferencia con nuestro modelo es importante llevar a cabo los siguientes pasos:
 
+```sh
+git clone git@github.com:pguillo02/yolov7.git
+cd yolov7
+pip install -r requirements.txt
+```
 
+Tras la configuración del entorno, si se desea realizar inferencia:
 
+```sh
+python detect.py --weights modelo.pt --conf 0.25 --img-size 1280 --source inference/boya1.jpg
+```
 
 
 
